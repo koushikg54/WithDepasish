@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (5.0.5)
+  - AMProgressHUD (1.0.0)
+  - EzPopup (1.1)
+  - FSCalendar (2.8.1)
+  - IQKeyboardManagerSwift (6.5.5)
+  - R.swift (5.1.0):
+    - R.swift.Library (~> 5.1.0)
+  - R.swift.Library (5.1.0)
+  - ReachabilitySwift (5.0.0)
+  - SwiftyGif (4.2.0)
+  - SwiftyJSON (4.2.0)
+  - SwiftyJSONModel (2.3.0):
+    - SwiftyJSON (~> 4.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AMProgressHUD
+  - EzPopup
+  - FSCalendar
+  - IQKeyboardManagerSwift
+  - R.swift
+  - ReachabilitySwift
+  - SwiftyGif (<= 4.2.0)
+  - SwiftyJSON (<= 4.2.0)
+  - SwiftyJSONModel
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AMProgressHUD
+    - EzPopup
+    - FSCalendar
+    - IQKeyboardManagerSwift
+    - R.swift
+    - R.swift.Library
+    - ReachabilitySwift
+    - SwiftyGif
+    - SwiftyJSON
+    - SwiftyJSONModel
+
+SPEC CHECKSUMS:
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  AMProgressHUD: 579420e7e702e38675a066654c5ca77a54ca6e46
+  EzPopup: b959cfb0d70d782a28e770a96c454df0401467c7
+  FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
+  R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SwiftyGif: a149bf84df23370592f3f075561ae02c8632a314
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SwiftyJSONModel: 014f92493a70d5a3f10e5dce8a24bee195fbd4a1
+
+PODFILE CHECKSUM: edc907302de056a6b4e8dfa81de28f0b5ffebcc6
+
+COCOAPODS: 1.8.4

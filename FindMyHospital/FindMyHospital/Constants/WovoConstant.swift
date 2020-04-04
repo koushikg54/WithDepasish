@@ -1,0 +1,86 @@
+//
+//  WovoConstant.swift
+//  WOVO
+//
+//  Created by Debasish Mondal on 28/06/19.
+//  Copyright © 2019 Indusnet Technologies. All rights reserved.
+//
+
+import Foundation
+
+struct WovoConstant {
+    public static let  Culturecode  = "CultureCode"
+    public static var  LanguageENUS = "en-us"
+    public static let  companyCode  = "companyCode"
+    public static let  companyEmployeeIDNum = "companyEmployeeIDNum"
+    public static let  password  = "password"
+    public static let  dateTimeZone = "dateTimeZone"
+    public static let  deviceToken  = "deviceToken"
+    public static let  deviceType = "deviceType"
+    public static let  deviceVersion  = "deviceVersion"
+    public static let  longitude = "longitude"
+    public static let  latitude  = "latitude"
+    public static let  userName = "userName"
+    public static let  OTPValidate = "OTPValidate"
+    public static let  DisplayContactScreen = "DisplayContactScreen"
+    public static let  DenyUnRegisterUser = "DenyUnRegisterUser"
+    public static let  gender = "Gender"
+    public static let  dob = "dateOfBirth"    
+    public static let  firstName = "firstName"
+    public static let  genderId  = "genderId"
+    public static let  cleanPhoneNumber = "cleanPhoneNumber"
+    public static let  employeeId  = "employeeId"
+    public static let  postalCode = "postalCode"
+    public static let  customFieldData = "customFieldData"
+    public static let  phoneNumber = "phoneNumber"
+    public static let  fieldName = "fieldName"
+    public static let  value = "value"
+    public static let  ErrorInInputData = "ErrorInInputData"
+    public static let  DuplicateContactExists = "DuplicateContactExists"
+    public static let  RegisteredUser = "RegisteredUser" 
+    public static let  employeeIdExist = "Employee ID already exists, please enter new ID"
+    public static let  identifier = "identifier"
+    public static let  RecordInserted = "RecordInserted"
+    public static let  RecordUpdated = "RecordUpdated"    
+    public static let  grant_type = "grant_type"
+    public static let  username = "username"
+    public static let  invalid_grant = "invalid_grant"
+    public static let  oldPassword = "oldPassword"
+    public static let  newPassword = "newPassword"
+    public static let  compCode = "compCode"
+    public static let  Authorization = "Authorization"
+    public static let  accept = "accept"
+    public static let  WovoUserIdKey = "userId"
+    public static let  WovoPasswordKey = "password"
+    public static let  WovoIsLoggedInStatusKey = "isLoggedIn"
+    public static let  ActiveUserAlreadyExists = "ActiveUserAlreadyExists"
+    public static let  ActiveEmpIDAlreadyExist = "ActiveEmpIDAlreadyExist"
+    public static let  companyId = "companyId"
+    public static let  CaseId = "CaseId"    
+    public static let  messageTypeId = "messageTypeId"
+    public static let  picCategoryId = "picCategoryId"
+    public static let  when = "when"
+    public static let  `where` = "where"
+    public static let  messageText = "messageText"
+    public static let value_ios = "iOS"
+    public static let NewsleterString = "ImFromNewsletter"
+    public static let SinglePaySlipString = "ImFromPayslip"
+    public static let okActionNotification = "ErrorDialogController"
+    public static let smileClickNotification = "SmileController"
+    public static let warningNotification = "AreYouSafe"
+    public static let loginToken = "loginToken"
+    public static let SignUpWithEmpId = "SignUpWithEmpId"
+    public static let rsvpPastEvent = "Can not RSVP to a past event"
+    public static let OldPasswordNotValid = "OldPasswordNotValid"
+    public static let wrongPhnNumber = "Numbers is not valid for selected country or company Employee ID already exists, please enter new ID"
+    
+    public static let  subject = "subject"
+    public static let  body = "body"
+    public static let base64Attachment = "base64Attachment"
+    public static let mimeType = "mimeType"
+    public static let png = "png"
+    public static let languageTypeStr = "languageTypeStr"
+    
+    
+    
+}
