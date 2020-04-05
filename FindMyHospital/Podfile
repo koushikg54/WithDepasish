@@ -12,7 +12,7 @@ pod 'SwiftyGif', '<= 4.2.0'
 pod 'SwiftyJSON', '<= 4.2.0'
 pod 'SwiftyJSONModel'
 pod 'EzPopup'
-pod 'Alamofire'
+pod 'Alamofire', '~> 4.2'
 pod 'AMProgressHUD'
 pod 'ReachabilitySwift'
 

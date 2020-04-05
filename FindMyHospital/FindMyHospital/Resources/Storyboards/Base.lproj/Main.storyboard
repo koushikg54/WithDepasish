@@ -61,7 +61,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="KcA-lm-peM" kind="show" id="o9k-3N-7X8"/>
+                                            <action selector="signInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ByU-NF-5z2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -98,6 +98,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mobileTextField" destination="Ve7-cZ-hVL" id="67G-Ah-EOA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,7 +109,7 @@
         <!--EnterOTP View Controller-->
         <scene sceneID="Dy9-eG-gWY">
             <objects>
-                <viewController id="KcA-lm-peM" customClass="EnterOTPViewController" customModule="FindMyHospital" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EnterOTPViewController" id="KcA-lm-peM" customClass="EnterOTPViewController" customModule="FindMyHospital" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bOt-7n-rmw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,9 +227,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="i7c-iR-ld8" firstAttribute="top" secondItem="lrA-lH-8Y5" secondAttribute="top" constant="8" id="0iB-9r-1qz"/>
-                                    <constraint firstItem="NCn-Qj-wq1" firstAttribute="centerX" secondItem="lrA-lH-8Y5" secondAttribute="centerX" id="89c-Ir-2rl"/>
                                     <constraint firstItem="NCn-Qj-wq1" firstAttribute="top" secondItem="7Au-8I-ge9" secondAttribute="bottom" constant="15" id="9Ii-5V-DgQ"/>
                                     <constraint firstItem="i7c-iR-ld8" firstAttribute="centerX" secondItem="lrA-lH-8Y5" secondAttribute="centerX" id="GgB-ZK-vEP"/>
+                                    <constraint firstItem="NCn-Qj-wq1" firstAttribute="centerX" secondItem="lrA-lH-8Y5" secondAttribute="centerX" id="Ph4-LV-3zQ"/>
                                     <constraint firstItem="7Au-8I-ge9" firstAttribute="top" secondItem="i7c-iR-ld8" secondAttribute="bottom" constant="8" id="Ufu-84-259"/>
                                     <constraint firstItem="7Au-8I-ge9" firstAttribute="leading" secondItem="lrA-lH-8Y5" secondAttribute="leading" constant="20" id="WKM-bj-U9U"/>
                                     <constraint firstItem="7Au-8I-ge9" firstAttribute="top" secondItem="i7c-iR-ld8" secondAttribute="bottom" constant="8" id="YvY-kM-5za"/>

@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.0.5)
+  - Alamofire (4.9.1)
   - AMProgressHUD (1.0.0)
   - EzPopup (1.1)
   - FSCalendar (2.8.1)
@@ -14,7 +14,7 @@ PODS:
     - SwiftyJSON (~> 4.0)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (~> 4.2)
   - AMProgressHUD
   - EzPopup
   - FSCalendar
@@ -40,7 +40,7 @@ SPEC REPOS:
     - SwiftyJSONModel
 
 SPEC CHECKSUMS:
-  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AMProgressHUD: 579420e7e702e38675a066654c5ca77a54ca6e46
   EzPopup: b959cfb0d70d782a28e770a96c454df0401467c7
   FSCalendar: 5245140456fcbcac5824c203b98bd8068bdfee1a
@@ -52,6 +52,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   SwiftyJSONModel: 014f92493a70d5a3f10e5dce8a24bee195fbd4a1
 
-PODFILE CHECKSUM: edc907302de056a6b4e8dfa81de28f0b5ffebcc6
+PODFILE CHECKSUM: 25f0d6c15107b39e4e817a9caec583a36c85df5f
 
 COCOAPODS: 1.8.4

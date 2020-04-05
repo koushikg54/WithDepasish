@@ -158,7 +158,7 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.file` struct is generated, and contains static references to 4 files.
+  /// This `R.file` struct is generated, and contains static references to 5 files.
   struct file {
     /// Resource file `1024x768.png`.
     static let x768Png = Rswift.FileResource(bundle: R.hostingBundle, name: "1024x768", pathExtension: "png")
@@ -168,6 +168,8 @@ struct R: Rswift.Validatable {
     static let x1536Png = Rswift.FileResource(bundle: R.hostingBundle, name: "2048x1536", pathExtension: "png")
     /// Resource file `768x1024.png`.
     static let x1024Png = Rswift.FileResource(bundle: R.hostingBundle, name: "768x1024", pathExtension: "png")
+    /// Resource file `Config.plist`.
+    static let configPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "Config", pathExtension: "plist")
 
     /// `bundle.url(forResource: "1024x768", withExtension: "png")`
     static func x768Png(_: Void = ()) -> Foundation.URL? {
@@ -190,6 +192,12 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "768x1024", withExtension: "png")`
     static func x1024Png(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.x1024Png
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Config", withExtension: "plist")`
+    static func configPlist(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.configPlist
       return fileResource.bundle.url(forResource: fileResource)
     }
 
@@ -571,8 +579,13 @@ struct _R: Rswift.Validatable {
       typealias InitialController = LoginViewController
 
       let bundle = R.hostingBundle
+      let enterOTPViewController = StoryboardViewControllerResource<EnterOTPViewController>(identifier: "EnterOTPViewController")
       let loginViewController = StoryboardViewControllerResource<LoginViewController>(identifier: "LoginViewController")
       let name = "Main"
+
+      func enterOTPViewController(_: Void = ()) -> EnterOTPViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: enterOTPViewController)
+      }
 
       func loginViewController(_: Void = ()) -> LoginViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: loginViewController)
@@ -582,6 +595,7 @@ struct _R: Rswift.Validatable {
         if UIKit.UIImage(named: "text-logo", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'text-logo' is used in storyboard 'Main', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
+        if _R.storyboard.main().enterOTPViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'enterOTPViewController' could not be loaded from storyboard 'Main' as 'EnterOTPViewController'.") }
         if _R.storyboard.main().loginViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'loginViewController' could not be loaded from storyboard 'Main' as 'LoginViewController'.") }
       }
 

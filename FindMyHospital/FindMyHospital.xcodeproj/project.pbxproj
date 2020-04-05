@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0931B432243A36D8005666F7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931B431243A36D8005666F7 /* Config.swift */; };
+		0931B434243A370D005666F7 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0931B433243A370D005666F7 /* Config.plist */; };
+		0931B437243A3807005666F7 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931B436243A3807005666F7 /* APIRequest.swift */; };
+		0931B439243A3832005666F7 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931B438243A3832005666F7 /* ApiManager.swift */; };
+		0931B43B243A4ACF005666F7 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931B43A243A4ACF005666F7 /* WebServiceManager.swift */; };
 		094D49A124387F44001FD996 /* DrProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094D49A024387F44001FD996 /* DrProfileTableViewController.swift */; };
 		094D49A424388C09001FD996 /* MemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094D49A324388C09001FD996 /* MemberListViewController.swift */; };
 		094D49A724388CD9001FD996 /* MemberListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094D49A624388CD9001FD996 /* MemberListTableViewCell.swift */; };
@@ -70,6 +75,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0931B431243A36D8005666F7 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		0931B433243A370D005666F7 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		0931B436243A3807005666F7 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		0931B438243A3832005666F7 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		0931B43A243A4ACF005666F7 /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
 		094D49A024387F44001FD996 /* DrProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrProfileTableViewController.swift; sourceTree = "<group>"; };
 		094D49A324388C09001FD996 /* MemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewController.swift; sourceTree = "<group>"; };
 		094D49A624388CD9001FD996 /* MemberListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListTableViewCell.swift; sourceTree = "<group>"; };
@@ -156,6 +166,25 @@
 				10046E9BB4FE54732FEEA298 /* Pods_FindMyHospital.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0931B430243A36A4005666F7 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				0931B431243A36D8005666F7 /* Config.swift */,
+				0931B433243A370D005666F7 /* Config.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		0931B435243A37B4005666F7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0931B436243A3807005666F7 /* APIRequest.swift */,
+				0931B438243A3832005666F7 /* ApiManager.swift */,
+				0931B43A243A4ACF005666F7 /* WebServiceManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		094D499F24387F1B001FD996 /* Doctor Profile */ = {
@@ -378,6 +407,8 @@
 		09F26A9224337D32002F46A6 /* FindMyHospital */ = {
 			isa = PBXGroup;
 			children = (
+				0931B435243A37B4005666F7 /* Networking */,
+				0931B430243A36A4005666F7 /* Configurations */,
 				09B172B424372D60000EAE23 /* Utilities */,
 				096369D124366B3200FA9711 /* TableViewCells */,
 				096369CE2436631900FA9711 /* CollectionViewCells */,
@@ -573,6 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				096A922D2438D1600028BAB8 /* 2048x1536.png in Resources */,
+				0931B434243A370D005666F7 /* Config.plist in Resources */,
 				09F26A9E24337D34002F46A6 /* LaunchScreen.storyboard in Resources */,
 				09F26A9B24337D34002F46A6 /* Assets.xcassets in Resources */,
 				096A922E2438D1600028BAB8 /* 768x1024.png in Resources */,
@@ -683,6 +715,9 @@
 				09F26ADA2433A237002F46A6 /* Extension+UIAlertController.swift in Sources */,
 				09F26AD52433A237002F46A6 /* Extension+Dictionary.swift in Sources */,
 				09F26AE52433AD72002F46A6 /* PhotoHandler.swift in Sources */,
+				0931B439243A3832005666F7 /* ApiManager.swift in Sources */,
+				0931B437243A3807005666F7 /* APIRequest.swift in Sources */,
+				0931B43B243A4ACF005666F7 /* WebServiceManager.swift in Sources */,
 				096369D02436635D00FA9711 /* SpecializationCollectionViewCell.swift in Sources */,
 				09F26AE92433AE1E002F46A6 /* FMHHelper.swift in Sources */,
 				094D49A124387F44001FD996 /* DrProfileTableViewController.swift in Sources */,
@@ -700,6 +735,7 @@
 				09F26AC42433A1E5002F46A6 /* AppConstants.swift in Sources */,
 				09F26AB82433A145002F46A6 /* BaseCollectionViewCell.swift in Sources */,
 				09B172BF24378F5D000EAE23 /* EmergencyHospTableViewCell.swift in Sources */,
+				0931B432243A36D8005666F7 /* Config.swift in Sources */,
 				09BC0FDE24346F5900DA8496 /* R.generated.swift in Sources */,
 				09F26AC22433A1E5002F46A6 /* Constants.swift in Sources */,
 				09F26AD82433A237002F46A6 /* UITableViewCellExtensions.swift in Sources */,
